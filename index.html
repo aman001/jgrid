@@ -1,9 +1,26 @@
 <html>
 	<head>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/jgrid.css" rel="stylesheet">
         <script src="assets/jquery.min.js"></script>
         <script src="assets/jgrid.1.0.js"></script>
 	</head>
 	<body>
 		<h1>Table Grid</h1>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+        <script>
+            $(document).ready(function(){
+                $("#myTable").jgrid();
+            });
+        </script>
 	</body>
 </html>
